@@ -1,4 +1,8 @@
-"""https://www.acmicpc.net/problem/1260
+"""
+https://covenant.tistory.com/147
+https://runestone.academy/ns/books/published/pythonds/BasicDS/PalindromeChecker.html
+
+https://www.acmicpc.net/problem/1260
 
 DFS/BFS
 """
