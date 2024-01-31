@@ -42,6 +42,8 @@ def solution(fees, records):
 
     return answer
 
+
+
 if __name__ == "__main__":
 
     # 기본 시간(분), 기본 요금(원), 단위 시간(분), 단위 요금(원)
