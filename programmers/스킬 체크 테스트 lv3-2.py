@@ -45,15 +45,32 @@ r과 c는 0 이상 3 이하인 정수입니다.
 
 """
 def solution(board, r, c):
+
+    def jumpctrl(b, r, c, i, j):
+        isjump = False
+        nx, ny = 0, 0
+
+        return isjump, nx, ny
+
     # BFS problem
     answer = 0
 
     dx, dy = [-1, 1, 0, 0], [0, 0, 1, -1]
-    ctrl = [True, False]
 
     from collections import deque
-
-
+    Q = deque([(r, c, 0)])
+    
+    while Q:
+        x, y, cnt = Q.popleft()
+        for i, j in zip(dx, dy):
+            # without ctrl
+            nx, ny = x + i, y + j
+            if nx >= 0 and nx < 4 and ny >= 0 and ny < 4:
+                Q.appendleft((nx, ny, cnt + 1))
+            # with ctrl
+            isjump, nx, ny = jumpctrl(board, r, c, i, j)
+            if isjump:
+                Q.appendleft((nx, ny, cnt + 1))        
 
     return answer
 
