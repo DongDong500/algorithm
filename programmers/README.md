@@ -1,7 +1,7 @@
-# Programmers' skill test test
+# Skill test
 
-Test my programming skills and prep with programmars level test. The score scale ranges from 1 to 5.
+Test my programming skills and prepare with programmars level checkers. The score scale ranges from 1 to 5.
 
 ```
-https://school.programmers.co.kr/
+https://school.programmers.co.kr/skill_checks
 ```
